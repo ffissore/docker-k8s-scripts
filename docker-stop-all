@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# Found at https://coderwall.com/p/ewk0mq/stop-remove-all-docker-containers
+
+docker stop $(docker ps -q)
+
