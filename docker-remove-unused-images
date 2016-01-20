@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-# Found at https://gist.github.com/anildigital/862675ec1b7bccabc311#gistcomment-1626611
-
-docker images --quiet --filter=dangling=true | xargs --no-run-if-empty docker rmi
-
 # The MIT License (MIT)
 # Copyright (c) 2016 Peter Lyons LLC
 #
@@ -23,3 +19,6 @@ docker images --quiet --filter=dangling=true | xargs --no-run-if-empty docker rm
 # COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 # IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 # CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+docker images --quiet --filter=dangling=true | xargs --no-run-if-empty docker rmi
+
