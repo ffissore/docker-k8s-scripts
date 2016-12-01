@@ -25,7 +25,7 @@ fi
 
 for CONTAINER_NAME in "$@"
 do
-	PARAMS="$PARAMS -l 'docker logs --tail=$LINES -f $CONTAINER_NAME'"
+	PARAMS="$PARAMS -cT ansi -l 'docker logs --tail=$LINES -f $CONTAINER_NAME'"
 done
 
 eval "multitail $PARAMS"

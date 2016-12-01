@@ -25,7 +25,7 @@ fi
 
 for POD_NAME in "$@"
 do
-	PARAMS="$PARAMS -l 'kubectl logs -f --tail=$LINES $POD_NAME'"
+	PARAMS="$PARAMS -cT ansi -l 'kubectl logs -f --tail=$LINES $POD_NAME'"
 done
 
 eval "multitail $PARAMS"
