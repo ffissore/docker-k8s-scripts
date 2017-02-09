@@ -23,5 +23,5 @@ then
 	shift
 fi
 
-docker logs --tail=$LINES -f $1
+docker logs --tail=$LINES -f $@
 

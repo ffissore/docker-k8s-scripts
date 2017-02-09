@@ -23,5 +23,5 @@ then
 	shift
 fi
 
-kubectl logs -f --tail=$LINES $1
+kubectl logs -f --tail=$LINES $@
 
